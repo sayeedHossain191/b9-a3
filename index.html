@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-white">
 
 <head>
     <meta charset="UTF-8">
@@ -26,6 +26,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'common': '#FF4240'
                     }
                 }
             }
@@ -36,7 +37,7 @@
 <body class="manrope">
     <header>
         <!-- Navbar -->
-        <div class="navbar bg-base-100">
+        <div class="navbar">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -47,8 +48,8 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base text-black">
+                        <li class="text-common"><a>Home</a></li>
                         <li>
                             <a>About</a>
                         </li>
@@ -57,11 +58,11 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <h2 class="text-3xl">Hockey’s</h2>
+                <h2 class="text-4xl text-black font-extrabold">Hockey<span class="text-common">'</span>s</h2>
             </div>
             <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                <ul class="menu text-base text-black menu-horizontal px-1">
+                    <li class="text-common"><a>Home</a></li>
                     <li>
                         <a>About</a>
                     </li>
@@ -70,8 +71,9 @@
                     <li><a>Contact</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn text-xl">Get Ticket</a>
+            <div class="navbar-end gap-6">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a class="btn text-xl bg-common text-white">Get Ticket</a>
             </div>
         </div>
     </header>
@@ -105,66 +107,75 @@
             </div>
         </section>
 
-        <section class="text-center">
+        <hr class="mt-24 border-dashed border-2">
+
+        <section class="text-center text-black mt-12">
             <h2 class="text-3xl font-extrabold">Professional Hockeys Club</h2>
-            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            <p class="">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus
+                urna in sit
                 nullam proin. </p>
         </section>
 
+        <hr class="mt-12 border-dashed border-2">
+
         <!-- Progress Bar -->
-        <section class="flex">
-            <div>
-                <div class="radial-progress text-primary font-extrabold" style="--value:87;" role="progressbar">87%
+        <section class="flex justify-around mt-12">
+            <div class="text-center">
+                <div class="radial-progress text-common font-extrabold" style="--value:87;" role="progressbar">87%
                 </div>
                 <div>
-                    <h3 class=" font-semibold">Prayer Facility</h3>
-                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    <h3 class=" font-semibold text-black">Prayer Facility</h3>
+                    <p class="w-64">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
             </div>
-            <div>
-                <div class="radial-progress text-primary font-extrabold" style="--value:95;" role="progressbar">95%
+            <div class="text-center">
+                <div class="radial-progress text-green-500 font-extrabold" style="--value:95;" role="progressbar">95%
                 </div>
                 <div>
-                    <h3 class=" font-semibold">Experienced Coach</h3>
-                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    <h3 class=" font-semibold text-black">Experienced Coach</h3>
+                    <p class="w-64">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
             </div>
-            <div>
-                <div class="radial-progress text-primary font-extrabold" style="--value:90;" role="progressbar">90%
+            <div class="text-center">
+                <div class="radial-progress text-orange-300 font-extrabold" style="--value:90;" role="progressbar">90%
                 </div>
                 <div>
-                    <h3 class=" font-semibold">Senior Player</h3>
-                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    <h3 class=" font-semibold text-black">Senior Player</h3>
+                    <p class="w-64">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
             </div>
-            <div>
-                <div class="radial-progress text-primary font-extrabold" style="--value:80;" role="progressbar">80%
+            <div class="text-center">
+                <div class="radial-progress text-blue-500 font-extrabold" style="--value:80;" role="progressbar">80%
                 </div>
                 <div>
-                    <h3 class=" font-semibold">Training Ground</h3>
-                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    <h3 class=" font-semibold text-black">Training Ground</h3>
+                    <p class="w-64">Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
             </div>
 
         </section>
 
-        <section class="text-center">
+        <hr class="mt-24 border-dashed border-2">
+
+        <section class="text-center text-black mt-12">
             <h2 class="text-3xl font-extrabold">Program Sections</h2>
             <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
                 nullam proin. </p>
         </section>
 
+        <hr class="mt-12 border-dashed border-2">
+
         <!-- Card Section -->
-        <section class="grid">
+        <section class="mt-12 grid grid-cols-2">
             <div class="card w-96 bg-base-100 shadow-xl image-full">
                 <figure><img src="Images/2.png" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                    <h2 class="card-title">Junior Program</h2>
+                    <h2 class="card-title text-3xl font-extrabold">Junior Program</h2>
                     <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
                         enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
                         sed et in.</p>
-                    <div class="card-actions justify-end">
+                    <div class="card-actions">
                         <button class="btn btn-primary">Register Now!</button>
                     </div>
                 </div>
@@ -184,7 +195,7 @@
                 </div>
             </div>
             <!-- Hero3 -->
-            <div class="card w-96 bg-base-100 shadow-xl image-full">
+            <div class="card w-96 bg-base-100 shadow-xl image-full col-span-2">
                 <figure><img src="Images/4.png" alt="Shoes" />
                 </figure>
                 <div class="card-body">
@@ -199,17 +210,20 @@
             </div>
         </section>
 
-        <section class="text-center">
+        <hr class="mt-24 border-dashed border-2">
+
+        <section class="text-center text-black mt-12">
             <h2 class="text-3xl font-extrabold">Our New Products</h2>
             <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
                 nullam proin. </p>
         </section>
 
+        <hr class="mt-12 border-dashed border-2">
 
         <!-- Card Products -->
-        <section class="grid grid-cols-2">
+        <section class="grid grid-cols-1 lg:grid-cols-2 mx-6 my-12 gap-6">
 
-            <div class="flex rounded-2xl lg:max-w-xl bg-white shadow-xl">
+            <div class="flex rounded-2xl  bg-white border border-gray-200">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/5.png" alt="Shoes" class="rounded-xl" />
@@ -217,28 +231,36 @@
                 </div>
                 <div class="card-body">
 
-                    <div class="flex">
-                        <i class="fa-solid fa-star"></i>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
+                    <div class="flex gap-4">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <h6>5.0</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-eye"></i>
+                            <h6>20</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-heart"></i>
+                            <h6>200</h6>
+                        </div>
                     </div>
 
-                    <h2 class="card-title">World Cup Flags Football</h2>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <h2 class="card-title text-black font-extrabold">World Cup Flags Jacket</h2>
+                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
 
-                    <div class="flex">
-                        <h6>Price - $22.00</h6>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h6>Delivery Fee : Free</h6>
+                    <div class="flex gap-4">
+                        <h6 class="font-extrabold text-common">Price - $22.00</h6>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h6>Delivery Fee : Free</h6>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="flex rounded-2xl lg:max-w-xl bg-white shadow-xl">
+            <div class="flex rounded-2xl  bg-white border border-gray-200">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/6.png" alt="Shoes" class="rounded-xl" />
@@ -246,28 +268,36 @@
                 </div>
                 <div class="card-body">
 
-                    <div class="flex">
-                        <i class="fa-solid fa-star"></i>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
+                    <div class="flex gap-4">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <h6>5.0</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-eye"></i>
+                            <h6>20</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-heart"></i>
+                            <h6>200</h6>
+                        </div>
                     </div>
 
-                    <h2 class="card-title">World Cup Flags Football</h2>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <h2 class="card-title text-black font-extrabold">World Cup Flags Football</h2>
+                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
 
-                    <div class="flex">
-                        <h6>Price - $22.00</h6>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h6>Delivery Fee : Free</h6>
+                    <div class="flex gap-4">
+                        <h6 class="font-extrabold text-common">Price - $22.00</h6>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h6>Delivery Fee : Free</h6>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="flex rounded-2xl lg:max-w-xl bg-white shadow-xl">
+            <div class="flex rounded-2xl  bg-white border border-gray-200">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/7.png" alt="Shoes" class="rounded-xl" />
@@ -275,28 +305,36 @@
                 </div>
                 <div class="card-body">
 
-                    <div class="flex">
-                        <i class="fa-solid fa-star"></i>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
+                    <div class="flex gap-4">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <h6>5.0</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-eye"></i>
+                            <h6>20</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-heart"></i>
+                            <h6>200</h6>
+                        </div>
                     </div>
 
-                    <h2 class="card-title">Cap For Hockeys</h2>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <h2 class="card-title text-black font-extrabold">Cap For Hockeys</h2>
+                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
 
-                    <div class="flex">
-                        <h6>Price - $22.00</h6>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h6>Delivery Fee : Free</h6>
+                    <div class="flex gap-4">
+                        <h6 class="font-extrabold text-common">Price - $22.00</h6>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h6>Delivery Fee : Free</h6>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="flex rounded-2xl lg:max-w-xl bg-white shadow-xl">
+            <div class="flex rounded-2xl  bg-white border border-gray-200">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/8.png" alt="Shoes" class="rounded-xl" />
@@ -304,28 +342,36 @@
                 </div>
                 <div class="card-body">
 
-                    <div class="flex">
-                        <i class="fa-solid fa-star"></i>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
+                    <div class="flex gap-4">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <h6>5.0</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-eye"></i>
+                            <h6>20</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-heart"></i>
+                            <h6>200</h6>
+                        </div>
                     </div>
 
-                    <h2 class="card-title">World Cup Flags Football</h2>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <h2 class="card-title text-black font-extrabold">Jersey For World Cup</h2>
+                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
 
-                    <div class="flex">
-                        <h6>Price - $22.00</h6>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h6>Delivery Fee : Free</h6>
+                    <div class="flex gap-4">
+                        <h6 class="font-extrabold text-common">Price - $22.00</h6>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h6>Delivery Fee : Free</h6>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="flex rounded-2xl lg:max-w-xl bg-white shadow-xl">
+            <div class="flex rounded-2xl  bg-white border border-gray-200">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/9.png" alt="Shoes" class="rounded-xl" />
@@ -333,28 +379,36 @@
                 </div>
                 <div class="card-body">
 
-                    <div class="flex">
-                        <i class="fa-solid fa-star"></i>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
+                    <div class="flex gap-4">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <h6>5.0</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-eye"></i>
+                            <h6>20</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-heart"></i>
+                            <h6>200</h6>
+                        </div>
                     </div>
 
-                    <h2 class="card-title">World Cup Flags Football</h2>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <h2 class="card-title text-black font-extrabold">World Cup Flags Helmet</h2>
+                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
 
-                    <div class="flex">
-                        <h6>Price - $22.00</h6>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h6>Delivery Fee : Free</h6>
+                    <div class="flex gap-4">
+                        <h6 class="font-extrabold text-common">Price - $22.00</h6>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h6>Delivery Fee : Free</h6>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="flex rounded-2xl lg:max-w-xl bg-white shadow-xl">
+            <div class="flex rounded-2xl  bg-white border border-gray-200">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/10.png" alt="Shoes" class="rounded-xl" />
@@ -362,22 +416,30 @@
                 </div>
                 <div class="card-body">
 
-                    <div class="flex">
-                        <i class="fa-solid fa-star"></i>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
+                    <div class="flex gap-4">
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-star text-orange-400"></i>
+                            <h6>5.0</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-eye"></i>
+                            <h6>20</h6>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-regular fa-heart"></i>
+                            <h6>200</h6>
+                        </div>
                     </div>
 
-                    <h2 class="card-title">World Cup Flags Football</h2>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <h2 class="card-title text-black font-extrabold">World Cup Flags Football</h2>
+                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
 
-                    <div class="flex">
-                        <h6>Price - $22.00</h6>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h6>Delivery Fee : Free</h6>
+                    <div class="flex gap-4">
+                        <h6 class="font-extrabold text-common">Price - $22.00</h6>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h6>Delivery Fee : Free</h6>
+                        </div>
                     </div>
 
                 </div>
@@ -385,14 +447,18 @@
 
         </section>
 
-        <section class="text-center">
+        <hr class="mt-24 border-dashed border-2">
+
+        <section class="text-center text-black mt-12">
             <h2 class="text-3xl font-extrabold">Clients Question</h2>
             <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
                 nullam proin. </p>
         </section>
 
+        <hr class="mt-12 border-dashed border-2">
+
         <!-- Accordian -->
-        <section class="flex">
+        <section class="flex mt-12 gap-10 justify-center">
             <div>
                 <img src="Images/11.png" alt="" srcset="">
             </div>
@@ -461,78 +527,124 @@
             </div>
         </section>
 
-        <section class="text-center">
+        <hr class="mt-24 border-dashed border-2">
+
+        <section class="text-center text-black mt-12">
             <h2 class="text-3xl font-extrabold">Get In Touch</h2>
             <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
                 nullam proin. </p>
         </section>
 
-        <!-- Form -->
-        <section>
+        <hr class="mt-12 border-dashed border-2">
 
-            <div>
-                <label class="form-control w-full max-w-xs">
-                    <div class="label">
-                        <span class="label-text text-xl font-bold">Your Name</span>
-                    </div>
-                    <input type="text" placeholder="Enter your full name"
-                        class="input input-bordered w-full max-w-xs" />
-                </label>
-            </div>
-            <div>
-                <label class="form-control w-full max-w-xs">
-                    <div class="label">
-                        <span class="label-text text-xl font-bold">Your Name</span>
-                    </div>
-                    <input type="text" placeholder="Enter your full name"
-                        class="input input-bordered w-full max-w-xs" />
-                </label>
-            </div>
-            <div>
-                <label class="form-control w-full max-w-xs">
-                    <div class="label">
-                        <span class="label-text text-xl font-bold">Your Name</span>
-                    </div>
-                    <input type="text" placeholder="Enter your full name"
-                        class="input input-bordered w-full max-w-xs" />
-                </label>
-            </div>
-            <div>
-                <label class="form-control w-full max-w-xs">
-                    <div class="label">
-                        <span class="label-text text-xl font-bold">Your Name</span>
-                    </div>
-                    <input type="text" placeholder="Enter your full name"
-                        class="input input-bordered w-full max-w-xs" />
-                </label>
-            </div>
-            <div>
-                <label class="form-control">
-                    <div class="label">
-                        <span class="label-text text-xl font-bold">Message</span>
-                    </div>
-                    <textarea class="textarea textarea-bordered h-24" placeholder="Write your message"></textarea>
+        <!-- Form and card-->
+        <section class="flex justify-around gap-6 items-center">
+            <div class="border border-gray-200 rounded-2xl">
 
-                </label>
+                <div class="card-body">
+                    <!-- card1 -->
+                    <div class="bg-white w-96 h-56 shadow-xl rounded-2xl">
+                        <figure><img class="px-8 py-8" src="Images/Group 1171275317.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <p>Phone Number : <br>
+                                <span class="text-black text-lg font-extrabold">(+62) 123-321-543</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card2 -->
+                    <div class="bg-white w-96 h-56 shadow-xl rounded-2xl">
+                        <figure><img class="px-8 py-8" src="Images/Group 1171275318.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <p>Email : <br>
+                                <span class="text-black text-lg font-extrabold">hockeys@support.com</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card3 -->
+                    <div class="bg-white w-96 h-56 shadow-xl rounded-2xl">
+                        <figure><img class="px-8 py-8" src="Images/Group 1171275321.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <p>Location : <br>
+                                <span class="text-black text-lg font-extrabold">152/1 Mohakhali Wireless Gate</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Send Message</button>
+
+            <!-- Form -->
+            <div class="grid grid-cols-2 gap-6">
+
+                <div>
+                    <label class="form-control  ">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Your Name</span>
+                        </div>
+                        <input type="text" placeholder="Enter your full name" class="input input-bordered " />
+                    </label>
+                </div>
+                <div>
+                    <label class="form-control w-full max-w-xs">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Your Email</span>
+                        </div>
+                        <input type="text" placeholder="Enter your email"
+                            class="input input-bordered w-full max-w-xs" />
+                    </label>
+                </div>
+
+
+
+                <div>
+                    <label class="form-control w-full max-w-xs">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Subject</span>
+                        </div>
+                        <input type="text" placeholder="Enter your subject"
+                            class="input input-bordered w-full max-w-xs" />
+                    </label>
+                </div>
+                <div>
+                    <label class="form-control w-full max-w-xs">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Phone Number</span>
+                        </div>
+                        <input type="text" placeholder="Enter your phone number"
+                            class="input input-bordered w-full max-w-xs" />
+                    </label>
+                </div>
+
+                <div>
+                    <label class="form-control">
+                        <div class="label">
+                            <span class="label-text text-xl font-bold">Message</span>
+                        </div>
+                        <textarea class="textarea textarea-bordered h-24" placeholder="Write your message"></textarea>
+
+                    </label>
+                </div>
+                <div>
+                    <button class="orange btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Send Message</button>
+                </div>
             </div>
         </section>
     </main>
 
 
-    <footer class="footer p-10 bg-white text-neutral-content">
+    <footer class="footer p-10 bg-black text-white">
         <nav>
             <header class="footer-title text-2xl font-extrabold">Get In Touch</header>
-            <p>Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam
+            <p class="w-80">Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in
+                sit nullam
                 proin. </p>
-            <i class="fa-solid fa-envelope"></i>
-            <a class="link link-hover">hockeys@support.com</a>
-            <i class="fa-solid fa-phone"></i>
-            <a class="link link-hover">(+62) 123-321-543</a>
-            <a class="link link-hover">Marketing</a>
-            <a class="link link-hover">Advertisement</a>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-common"></i>
+                <a class="link link-hover">hockeys@support.com</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-common"></i>
+                <a class="link link-hover">(+62) 123-321-543</a>
+            </div>
         </nav>
         <nav>
             <header class="footer-title font-bold">Company</header>
