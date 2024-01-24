@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/116f3ab7c0.js" crossorigin="anonymous"></script>
 
     <style>
@@ -35,7 +35,7 @@
 </head>
 
 <body class="manrope">
-    <header>
+    <header class="mx-16">
         <!-- Navbar -->
         <div class="navbar">
             <div class="navbar-start">
@@ -58,7 +58,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <h2 class="text-4xl text-black font-extrabold">Hockey<span class="text-common">'</span>s</h2>
+                <h2 class="test text-4xl text-black font-extrabold ">Hockey<span class="text-common">'</span>s</h2>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu text-base text-black menu-horizontal px-1">
@@ -72,18 +72,28 @@
                 </ul>
             </div>
             <div class="navbar-end gap-6">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a class="btn text-xl bg-common text-white">Get Ticket</a>
+                <i class="fa-solid fa-magnifying-glass sm: hidden"></i>
+                <a class="btn text-xl text-white bg-common btn1">Get Ticket</a>
             </div>
         </div>
+
     </header>
 
-    <main>
+    <main class="mx-16">
         <!-- Slider -->
         <section>
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="Images/1.png" class="w-full" />
+                    <div class="absolute p-10 bg-black text-white rounded-xl left-2/4 top-3/4">
+                        <h1 class="text-2xl">
+                            Meet all the heroes from the field
+                        </h1>
+                        <p class="pt-4">
+                            Hockey players wear numbers because you can’t always identify the body with dental
+                            records.I’m not dumb enough to be a goalie.
+                        </p>
+                    </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
@@ -110,125 +120,128 @@
         <hr class="mt-24 border-dashed border-2">
 
         <section class="text-center text-black mt-12">
-            <h2 class="text-3xl font-extrabold">Professional Hockeys Club</h2>
-            <p class="">"A good hockey player plays where the puck is. A great hockey player plays where the puck is
-                going to be."</p>
+            <h2 class="text-3xl font-extrabold mb-6">Professional Hockeys Club</h2>
+            <p class="">A good hockey player plays where the puck is. A great hockey player plays where <br>
+                the puck is
+                going to be </p>
         </section>
 
         <hr class="mt-12 border-dashed border-2">
 
         <!-- Progress Bar -->
-        <section class="flex justify-around mt-12">
-            <div class="text-center">
+        <section class="flex text-center justify-between mx-16 mt-12 progressbar1 ">
+
+
+            <div>
                 <div class="radial-progress text-common font-extrabold" style="--value:87;" role="progressbar">87%
                 </div>
-                <div>
-                    <h3 class=" font-semibold text-black">Prayer Facility</h3>
-                    <p class="w-64">Amet consectetur. Condimentum dignissim adipiscing .</p>
-                </div>
+                <h3 class=" font-semibold text-black mt-4">Prayer Facility</h3>
+                <p class="w-64 text-center">True words spoken by one of the game’s all-time greats</p>
             </div>
-            <div class="text-center">
-                <div class="radial-progress text-green-500 font-extrabold" style="--value:95;" role="progressbar">95%
+
+
+
+            <div>
+                <div class="radial-progress text-green-500 font-extrabold" style="--value:95;" role="progressbar">
+                    95%
                 </div>
-                <div>
-                    <h3 class=" font-semibold text-black">Experienced Coach</h3>
-                    <p class="w-64">Amet consectetur. Condimentum dignissim adipiscing .</p>
-                </div>
+                <h3 class=" font-semibold text-black mt-4">Experienced Coach</h3>
+                <p class="w-64">“You miss 100% of the shots you don’t take.”</p>
             </div>
-            <div class="text-center">
-                <div class="radial-progress text-orange-300 font-extrabold" style="--value:90;" role="progressbar">90%
+
+
+
+            <div>
+                <div class="radial-progress text-orange-300 font-extrabold" style="--value:90;" role="progressbar">
+                    90%
                 </div>
-                <div>
-                    <h3 class=" font-semibold text-black">Senior Player</h3>
-                    <p class="w-64">Amet consectetur. Condimentum dignissim adipiscing .</p>
-                </div>
+                <h3 class=" font-semibold text-black mt-4">Senior Player</h3>
+                <p class="w-64">Some of us love hockey not just for its ferocity. </p>
             </div>
-            <div class="text-center">
+
+
+
+            <div>
                 <div class="radial-progress text-blue-500 font-extrabold" style="--value:80;" role="progressbar">80%
                 </div>
-                <div>
-                    <h3 class=" font-semibold text-black">Training Ground</h3>
-                    <p class="w-64">Amet consectetur. Condimentum dignissim adipiscing .</p>
-                </div>
+                <h3 class=" font-semibold text-black mt-4">Training Ground</h3>
+                <p class="w-64">“Every day is a great day for hockey.”</p>
             </div>
+
 
         </section>
 
         <hr class="mt-24 border-dashed border-2">
 
         <section class="text-center text-black mt-12">
-            <h2 class="text-3xl font-extrabold">Program Sections</h2>
-            <p>Learn more by visiting our "Grow" or "Lead" resources or contact our team to get more information at
-                programservices@usahockey.org.</p>
+            <h2 class="text-3xl font-extrabold mb-4">Program Sections</h2>
+            <p>Learn more by visiting our "Grow" or "Lead" resources or contact our team to get <br> more information at
+                programservices@usahockey.org. </p>
         </section>
 
         <hr class="mt-12 border-dashed border-2">
 
         <!-- Card Section -->
-        <section class="mt-12 grid grid-cols-2">
-            <div class="card w-96 bg-base-100 shadow-xl image-full">
-                <figure><img src="Images/2.png" alt="Shoes" />
+        <section class="card1  mt-12 w-[1000px] ml-52 grid grid-cols-2 sm: grid-cols-1 gap-6">
+            <div class="card shadow-xl image-full">
+                <figure><img class="w-screen" src="Images/2.png" alt="Shoes" />
                 </figure>
-                <div class="card-body">
+                <div class="card-body mt-8">
                     <h2 class="card-title text-3xl font-extrabold">Junior Program</h2>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
+                    <p>"A good hockey player plays where the puck is. A great hockey player plays where the puck is
+                        going to be." - Wayne Gretzky</p>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Register Now!</button>
+                        <button class="btn bg-common border-none text-white">Register Now!</button>
                     </div>
                 </div>
             </div>
             <!-- Hero2 -->
-            <div class="card w-96 bg-base-100 shadow-xl image-full">
-                <figure><img src="Images/3.png" alt="Shoes" />
+            <div class="card shadow-xl image-full">
+                <figure><img class="w-screen" src="Images/3.png" alt="Shoes" />
                 </figure>
-                <div class="card-body">
-                    <h2 class="card-title">Teenager Program</h2>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Register Now!</button>
+                <div class="card-body mt-8">
+                    <h2 class="card-title text-3xl font-extrabold">Teenager Program</h2>
+                    <p>You not only have to be physically strong and skilled, but you also have to have the right
+                        mindset every time you step on the ice.</p>
+                    <div class=" card-actions">
+                        <button class="btn bg-common text-white border-none">Register Now!</button>
                     </div>
                 </div>
             </div>
             <!-- Hero3 -->
-            <div class="card w-96 bg-base-100 shadow-xl image-full col-span-2">
-                <figure><img src="Images/4.png" alt="Shoes" />
+            <div class="card col-span-2 shadow-xl image-full">
+                <figure><img class="w-screen" src="Images/4.png" alt="Shoes" />
                 </figure>
-                <div class="card-body">
-                    <h2 class="card-title">Professional Program</h2>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Register Now!</button>
+                <div class=" w-[600px] card-body mt-36">
+                    <h2 class="card-title text-3xl font-extrabold">Professional Program</h2>
+                    <p>While everyone else is out there chasing the next new fancy toy to do stickhandling drills with,
+                        some of the most important qualities you will ever gain in hockey</p>
+                    <div class="card-actions">
+                        <button class="btn border-none bg-common text-white">Register Now!</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <hr class="mt-24 border-dashed border-2">
-
         <section class="text-center text-black mt-12">
             <h2 class="text-3xl font-extrabold">Our New Products</h2>
-            <p>We are professional athletes who are passionate about growing the game of hockey in the USA from a
-                grass-roots level</p>
+            <p>We are professional athletes who are passionate about growing the game of hockey <br> in the USA from a
+                grass-roots level </p>
         </section>
 
         <hr class="mt-12 border-dashed border-2">
 
         <!-- Card Products -->
-        <section class="grid grid-cols-1 lg:grid-cols-2 mx-6 my-12 gap-6">
+        <section class="grid grid-cols-1 lg:grid-cols-2 mx-6 my-12 gap-6 ">
 
-            <div class="flex rounded-2xl  bg-white border border-gray-200">
-                <div>
-                    <figure class="pt-7">
-                        <img src="Images/5.png" alt="Shoes" class="rounded-xl" />
-                    </figure>
-                </div>
-                <div class="card-body">
+            <div class="flex rounded-2xl  bg-white border border-gray-200 card3">
+
+                <figure class="pt-7">
+                    <img src="Images/5.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+
+                <div class="card-body card4">
 
                     <div class="flex gap-4">
                         <div class="flex gap-2 items-center">
@@ -246,7 +259,7 @@
                     </div>
 
                     <h2 class="card-title text-black font-extrabold">World Cup Flags Jacket</h2>
-                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <p class="w-80"> didn’t speak English until I came to Pittsburgh. </p>
 
                     <div class="flex gap-4">
                         <h6 class="font-extrabold text-common">Price - $22.00</h6>
@@ -259,7 +272,7 @@
                 </div>
             </div>
 
-            <div class="flex rounded-2xl  bg-white border border-gray-200">
+            <div class="flex rounded-2xl  bg-white border border-gray-200 card3">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/6.png" alt="Shoes" class="rounded-xl" />
@@ -283,7 +296,7 @@
                     </div>
 
                     <h2 class="card-title text-black font-extrabold">World Cup Flags Football</h2>
-                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <p class="w-80">Only Dunlop has seen more rubber than I have. </p>
 
                     <div class="flex gap-4">
                         <h6 class="font-extrabold text-common">Price - $22.00</h6>
@@ -296,7 +309,7 @@
                 </div>
             </div>
 
-            <div class="flex rounded-2xl  bg-white border border-gray-200">
+            <div class="flex rounded-2xl  bg-white border border-gray-200 card3">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/7.png" alt="Shoes" class="rounded-xl" />
@@ -320,7 +333,7 @@
                     </div>
 
                     <h2 class="card-title text-black font-extrabold">Cap For Hockeys</h2>
-                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <p class="w-80">Don’t worry what people say or what people think. </p>
 
                     <div class="flex gap-4">
                         <h6 class="font-extrabold text-common">Price - $22.00</h6>
@@ -333,7 +346,7 @@
                 </div>
             </div>
 
-            <div class="flex rounded-2xl  bg-white border border-gray-200">
+            <div class="flex rounded-2xl  bg-white border border-gray-200 card3">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/8.png" alt="Shoes" class="rounded-xl" />
@@ -357,7 +370,7 @@
                     </div>
 
                     <h2 class="card-title text-black font-extrabold">Jersey For World Cup</h2>
-                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <p class="w-80">I’m leaving the game of hockey with nothing but great memories. </p>
 
                     <div class="flex gap-4">
                         <h6 class="font-extrabold text-common">Price - $22.00</h6>
@@ -370,7 +383,7 @@
                 </div>
             </div>
 
-            <div class="flex rounded-2xl  bg-white border border-gray-200">
+            <div class="flex rounded-2xl  bg-white border border-gray-200 card3">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/9.png" alt="Shoes" class="rounded-xl" />
@@ -394,7 +407,7 @@
                     </div>
 
                     <h2 class="card-title text-black font-extrabold">World Cup Flags Helmet</h2>
-                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <p class="w-80">Arrive at the net with the puck and in ill humor. </p>
 
                     <div class="flex gap-4">
                         <h6 class="font-extrabold text-common">Price - $22.00</h6>
@@ -407,7 +420,7 @@
                 </div>
             </div>
 
-            <div class="flex rounded-2xl  bg-white border border-gray-200">
+            <div class="flex rounded-2xl  bg-white border border-gray-200 card3">
                 <div>
                     <figure class="pt-7">
                         <img src="Images/10.png" alt="Shoes" class="rounded-xl" />
@@ -431,7 +444,7 @@
                     </div>
 
                     <h2 class="card-title text-black font-extrabold">World Cup Flags Football</h2>
-                    <p class="w-80">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    <p class="w-80">If I had the Rangers payroll, I’d never lose a game. </p>
 
                     <div class="flex gap-4">
                         <h6 class="font-extrabold text-common">Price - $22.00</h6>
@@ -450,17 +463,17 @@
 
         <section class="text-center text-black mt-12">
             <h2 class="text-3xl font-extrabold">Clients Question</h2>
-            <p>Every hockey fan knows the brand Bauer. Another team of developers worked on the online store for the
-                Bauer brand for almost a year.</p>
+            <p>Every hockey fan knows the brand Bauer. Another team of developers worked on the online store <br> for
+                the
+                Bauer brand for almost a year. </p>
         </section>
 
         <hr class="mt-12 border-dashed border-2">
 
         <!--Hero and Accordian -->
         <section class="mt-24">
-
             <!-- Hero -->
-            <div class="hero min-h-screen bg-slate-200">
+            <div class="hero min-h-screen border border-gray-200 rounded-xl">
                 <div class="hero-content flex-col lg:gap-10 lg:flex-row">
                     <img src="Images/11.png" class="w-3/4 lg:max-w-sm rounded-lg shadow-2xl" />
 
@@ -534,18 +547,10 @@
 
         </section>
 
-        <hr class="mt-24 border-dashed border-2">
-
-        <section class="text-center text-black mt-12">
-            <h2 class="text-3xl font-extrabold">Get In Touch</h2>
-            <p>We work with players of all ages and skill levels and would love to help you (or your kid) take your game
-                to the next level. </p>
-        </section>
-
         <hr class="mt-12 border-dashed border-2">
 
         <!-- Form and card-->
-        <section class="flex justify-around gap-6 items-center">
+        <section class="flex justify-around gap-6 items-start w-[1200px] ml-32 h-[800px] mt-8">
             <div class="border border-gray-200 rounded-2xl">
 
                 <div class="card-body">
@@ -580,14 +585,15 @@
             </div>
 
             <!-- Form -->
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
 
                 <div>
                     <label class="form-control  ">
                         <div class="label">
                             <span class="label-text text-xl font-bold">Your Name</span>
                         </div>
-                        <input type="text" placeholder="Enter your full name" class="input input-bordered " />
+                        <input type="text" placeholder="Enter your full name"
+                            class="input input-bordered w-80 bg-[#13131808]" />
                     </label>
                 </div>
                 <div>
@@ -595,8 +601,7 @@
                         <div class="label">
                             <span class="label-text text-xl font-bold">Your Email</span>
                         </div>
-                        <input type="text" placeholder="Enter your email"
-                            class="input input-bordered w-full max-w-xs" />
+                        <input type="text" placeholder="Enter your email" class="input input-bordered bg-[#13131808]" />
                     </label>
                 </div>
 
@@ -608,7 +613,7 @@
                             <span class="label-text text-xl font-bold">Subject</span>
                         </div>
                         <input type="text" placeholder="Enter your subject"
-                            class="input input-bordered w-full max-w-xs" />
+                            class="input input-bordered bg-[#13131808]" />
                     </label>
                 </div>
                 <div>
@@ -617,33 +622,48 @@
                             <span class="label-text text-xl font-bold">Phone Number</span>
                         </div>
                         <input type="text" placeholder="Enter your phone number"
-                            class="input input-bordered w-full max-w-xs" />
+                            class="input input-bordered bg-[#13131808]" />
                     </label>
                 </div>
 
-                <div class="col-span-2">
+                <div>
                     <label class="form-control">
                         <div class="label">
                             <span class="label-text text-xl font-bold">Message</span>
                         </div>
-                        <textarea class="textarea textarea-bordered h-24" placeholder="Write your message"></textarea>
-
+                        <textarea class=" w-[690px] lg:h-96 rounded h-56 bg-[#13131808] p-2"
+                            placeholder="Write your message"></textarea>
                     </label>
+                    <div>
+                        <button class="mt-4 bg-common text-white btn w-[690px] sm:btn-sm md:btn-md lg:btn-lg">Send
+                            Message</button>
+                    </div>
                 </div>
-                <div>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-common text-white col-span-2">Send
-                        Message</button>
-                </div>
+
             </div>
+
         </section>
+
+        <div class="text-center bg-[#13131808] w-[1170px] ml-32 mb-12 rounded py-12">
+            <div>
+                <h1 class="font-extrabold text-3xl text-black">Social Media</h1>
+            </div>
+            <div class="text-2xl">
+                <i class="fa-brands fa-twitter p-2"></i>
+                <i class="fa-brands fa-facebook p-2"></i>
+                <i class="fa-brands fa-instagram p-2"></i>
+                <i class="fa-brands fa-github p-2"></i>
+            </div>
+        </div>
     </main>
+
 
 
     <footer class="footer p-10 bg-black text-white">
         <nav>
             <header class="footer-title text-2xl font-extrabold">Get In Touch</header>
             <p class="w-80">If you’re ready to leave the coach’s jaw on the floor with improvement, click the red button
-                below to get started with one of our training systems!</p>
+                below</p>
             <div class="flex items-center gap-3">
                 <i class="fa-solid fa-envelope text-common"></i>
                 <a class="link link-hover">hockeys@support.com</a>
